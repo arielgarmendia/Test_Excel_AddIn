@@ -67,9 +67,15 @@ namespace TestExcelAddIn
                 campoB.Value = campoA.Value.AddDays(Convert.ToInt32(incremento.Text));
 
                 if (Convert.ToInt32(incremento.Text) != defaultInc)
+                {
                     incremento.BackColor = Color.Yellow;
+                    incdays.BackColor = Color.Red;
+                }
                 else
+                {
                     incremento.BackColor = Color.White;
+                    incdays.BackColor = incButtonColor;
+                }
             }
             catch
             {
