@@ -58,6 +58,8 @@
             // 
             this.RunButton.Label = "RUN";
             this.RunButton.Name = "RunButton";
+            this.RunButton.ScreenTip = "Run";
+            this.RunButton.SuperTip = "Run";
             this.RunButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.RunButton_Click);
             // 
             // Ribbon1

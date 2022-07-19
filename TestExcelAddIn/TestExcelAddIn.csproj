@@ -209,7 +209,7 @@
     <Compile Include="Ribbon1.Designer.cs">
       <DependentUpon>Ribbon1.cs</DependentUpon>
     </Compile>
-    <Compile Include="RibbonExtended.cs">
+    <Compile Include="Ribbon1.Extended.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ThisAddIn.cs">
