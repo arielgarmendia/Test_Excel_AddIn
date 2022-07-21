@@ -16,6 +16,7 @@ namespace TestExcelAddIn
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
+            //this is a test
         }
 
         #region VSTO generated code
