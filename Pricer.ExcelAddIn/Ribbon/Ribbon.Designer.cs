@@ -51,20 +51,22 @@
             // group1
             // 
             this.group1.Items.Add(this.RunButton);
-            this.group1.Label = "PoC";
+            this.group1.Label = "BBVA Pricer";
             this.group1.Name = "group1";
             // 
             // RunButton
             // 
+            this.RunButton.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
             this.RunButton.Label = "RUN";
             this.RunButton.Name = "RunButton";
             this.RunButton.ScreenTip = "Run";
+            this.RunButton.ShowImage = true;
             this.RunButton.SuperTip = "Run";
             this.RunButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.RunButton_Click);
             // 
-            // Ribbon1
+            // Ribbon
             // 
-            this.Name = "Ribbon1";
+            this.Name = "Ribbon";
             this.RibbonType = "Microsoft.Excel.Workbook";
             this.Tabs.Add(this.tab1);
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.Ribbon1_Load);
