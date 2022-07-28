@@ -57,6 +57,7 @@
             // RunButton
             // 
             this.RunButton.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.RunButton.Image = global::TestExcelAddIn.Properties.Resources.Logo;
             this.RunButton.Label = "RUN";
             this.RunButton.Name = "RunButton";
             this.RunButton.ScreenTip = "Run";
