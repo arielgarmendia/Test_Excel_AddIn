@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestExcelAddIn.Properties {
+namespace Pricer.ExcelAddIn.Properties {
     
     
     /// <summary>

@@ -2,9 +2,9 @@
 using System;
 using System.Drawing;
 
-namespace TestExcelAddIn
+namespace Pricer.ExcelAddIn
 {
-    public partial class Ribbon1
+    public partial class Ribbon
     {
         private const int defaultInc = 5;
 

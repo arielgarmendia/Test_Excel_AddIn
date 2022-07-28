@@ -1,13 +1,13 @@
-﻿namespace TestExcelAddIn
+﻿namespace Pricer.ExcelAddIn
 {
-    partial class Ribbon1 : Microsoft.Office.Tools.Ribbon.RibbonBase
+    partial class Ribbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        public Ribbon1()
+        public Ribbon()
             : base(Globals.Factory.GetRibbonFactory())
         {
             InitializeComponent();
@@ -85,9 +85,9 @@
 
     partial class ThisRibbonCollection
     {
-        internal Ribbon1 Ribbon1
+        internal Ribbon Ribbon1
         {
-            get { return this.GetRibbon<Ribbon1>(); }
+            get { return this.GetRibbon<Ribbon>(); }
         }
     }
 }

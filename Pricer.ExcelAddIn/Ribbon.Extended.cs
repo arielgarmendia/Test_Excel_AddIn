@@ -2,9 +2,9 @@
 using System;
 using Excel = Microsoft.Office.Interop.Excel;
 
-namespace TestExcelAddIn
+namespace Pricer.ExcelAddIn
 {
-    public partial class Ribbon1
+    public partial class Ribbon
     {
         private void Setup()
         {

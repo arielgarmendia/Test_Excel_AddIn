@@ -1,6 +1,6 @@
 ﻿using Excel = Microsoft.Office.Interop.Excel;
 
-namespace TestExcelAddIn
+namespace Pricer.ExcelAddIn
 {
     public partial class ThisAddIn
     {
