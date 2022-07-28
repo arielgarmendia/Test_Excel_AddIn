@@ -26,5 +26,10 @@ namespace Pricer.ExcelAddIn.Forms
         {
             this.DialogResult = DialogResult.Cancel;
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

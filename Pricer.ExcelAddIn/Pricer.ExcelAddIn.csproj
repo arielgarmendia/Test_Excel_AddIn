@@ -186,7 +186,11 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Authentication.cs" />
+    <Compile Include="Modules\Autocall.cs" />
     <Compile Include="Modules\ExcelPricer.cs" />
+    <Compile Include="Modules\JsonConverter.cs" />
+    <Compile Include="Modules\Services.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -205,7 +209,7 @@
     <EmbeddedResource Include="Ribbon\Ribbon.resx">
       <DependentUpon>Ribbon.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Price.ExcelAddIn_TemporaryKey.pfx" />
+    <None Include="Pricer.ExcelAddIn_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
