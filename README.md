@@ -14,5 +14,5 @@ Solution to develop an specifid add-in for BBVA Pricer.
         - Select in editor the desired code to convert, i.e. the whole class code.
         - Right click on selected code, menu: Convert to C$.
         - This will create a new .cs doc with a class and the content translated from VB to C#.
-        - Then move code to the main add-in project to the desired location.
+        - Then move code to the main add-in project, choose the desired location or container class.
         - Unfortunately we have to manually check the whole converion to have a working code.
