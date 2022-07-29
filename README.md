@@ -1,6 +1,6 @@
 ## **About:**
 
-Solution to develop an specifid add-in for BBVA Pricer. 
+Solution to develop an specifid add-in for the BBVA Excel Pricer tool. 
 
 ## **Important tips and notes:**
 
