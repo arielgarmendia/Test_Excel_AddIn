@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.CancelButton = new System.Windows.Forms.Button();
             this.LoginButton = new System.Windows.Forms.Button();
@@ -35,6 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.User = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
+            this.UserErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.PasswordErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.UserErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PasswordErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // CancelButton
@@ -78,25 +83,35 @@
             // 
             // User
             // 
+            this.UserErrorProvider.SetIconPadding(this.User, 2);
             this.User.Location = new System.Drawing.Point(87, 10);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(178, 20);
             this.User.TabIndex = 4;
+            this.User.UseSystemPasswordChar = true;
             // 
             // Password
             // 
+            this.PasswordErrorProvider.SetIconPadding(this.Password, 2);
             this.Password.Location = new System.Drawing.Point(87, 38);
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
             this.Password.Size = new System.Drawing.Size(178, 20);
             this.Password.TabIndex = 5;
             // 
+            // UserErrorProvider
+            // 
+            this.UserErrorProvider.ContainerControl = this;
+            // 
+            // PasswordErrorProvider
+            // 
+            this.PasswordErrorProvider.ContainerControl = this;
+            // 
             // Login
             // 
-            this.AcceptButton = this.LoginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 91);
+            this.ClientSize = new System.Drawing.Size(284, 101);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.User);
             this.Controls.Add(this.label2);
@@ -105,13 +120,16 @@
             this.Controls.Add(this.CancelButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(300, 130);
-            this.MinimumSize = new System.Drawing.Size(300, 130);
+            this.MaximumSize = new System.Drawing.Size(300, 140);
+            this.MinimumSize = new System.Drawing.Size(300, 140);
             this.Name = "Login";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.UserErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PasswordErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +143,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox User;
         private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.ErrorProvider UserErrorProvider;
+        private System.Windows.Forms.ErrorProvider PasswordErrorProvider;
     }
 }
