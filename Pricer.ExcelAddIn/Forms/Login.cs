@@ -45,6 +45,8 @@ namespace Pricer.ExcelAddIn.Forms
                         {
                             //ButtonLoadStaticData("LVB Proced. Generator");
                         }
+
+                        this.DialogResult = DialogResult.OK;
                     }
                     else
                     {
@@ -52,9 +54,9 @@ namespace Pricer.ExcelAddIn.Forms
                         //ThisWorkbook.Sheets("LVB Proced. Generator").ButtonLogout.BackColor = VBA.RGB(255, 0, 0);
 
                         MessageBox.Show("Login KO.", "KO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
 
-                    this.DialogResult = DialogResult.OK;
+                        this.DialogResult = DialogResult.Retry;
+                    }
                 }
                 else
                     this.DialogResult = DialogResult.Retry;
