@@ -16,3 +16,5 @@ Solution to develop an specifid add-in for the BBVA Excel Pricer tool.
         - This will create a new .cs doc with a class and the content translated from VB to C#.
         - Then move code to the main add-in project, choose the desired location or container class.
         - Unfortunately we have to manually check the whole converted code, to have a working add-in.
+- For Json management use the installed Nuget: Newtonsoft.Json
+- Add all data classes to the Model folder.
