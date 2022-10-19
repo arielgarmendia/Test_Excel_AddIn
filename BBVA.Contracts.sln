@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{2F454B2E-AC9E-4284-B9E7-4F9D2B62C0FF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BBVAA.Contracts.ExcelAddin", "BBVAA.Contracts.ExcelAddin", "{3FE47611-FA84-4F5A-BE8D-0DF99DA93B24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BBVA.Contracts.APIs", "BBVA.Contracts.APIs", "{AB7CBD10-766F-4EB6-968C-6F044F4CBF03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPrice.API", "CPrice.API\CPrice.API.csproj", "{8355CE43-01D6-4FE1-AF43-B60C6D0F4AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.ExcelAddIn", "Contracts.ExcelAddIn\Contracts.ExcelAddIn.csproj", "{5D81752D-31AA-4452-9F37-9B4B9EDA6AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8355CE43-01D6-4FE1-AF43-B60C6D0F4AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8355CE43-01D6-4FE1-AF43-B60C6D0F4AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8355CE43-01D6-4FE1-AF43-B60C6D0F4AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8355CE43-01D6-4FE1-AF43-B60C6D0F4AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D81752D-31AA-4452-9F37-9B4B9EDA6AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D81752D-31AA-4452-9F37-9B4B9EDA6AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D81752D-31AA-4452-9F37-9B4B9EDA6AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D81752D-31AA-4452-9F37-9B4B9EDA6AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8355CE43-01D6-4FE1-AF43-B60C6D0F4AAA} = {AB7CBD10-766F-4EB6-968C-6F044F4CBF03}
+		{5D81752D-31AA-4452-9F37-9B4B9EDA6AD4} = {3FE47611-FA84-4F5A-BE8D-0DF99DA93B24}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2526019-0007-4777-BE47-0449AB26DE01}
+	EndGlobalSection
+EndGlobal
