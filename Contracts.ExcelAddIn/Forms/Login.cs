@@ -47,6 +47,15 @@ namespace Pricer.ExcelAddIn.Forms
                         }
 
                         this.DialogResult = DialogResult.OK;
+
+                        iRespuesta = MessageBox.Show(Authentication.Test(), "Test", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                        if (iRespuesta == DialogResult.Yes)
+                        {
+                            //ButtonLoadStaticData("LVB Proced. Generator");
+                        }
+
+                        this.DialogResult = DialogResult.OK;
                     }
                     else
                     {

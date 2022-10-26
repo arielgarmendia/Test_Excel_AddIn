@@ -8,6 +8,8 @@ namespace Contracts.Module.Auth
 {
     public class Authentication
     {
+        public static string Test() { return "This is a test...";  }
+
         public static string InternalLogIn(string user, string password)
         {
             string InternalLogInRet = default;
