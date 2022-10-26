@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pricer.ExcelAddIn.Modules
+namespace Contracts.Module.Auth
 {
-    internal class Authentication
+    public class Authentication
     {
         public static string InternalLogIn(string user, string password)
         {

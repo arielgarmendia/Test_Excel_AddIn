@@ -1,4 +1,4 @@
-﻿using Pricer.ExcelAddIn.Modules;
+﻿using Contracts.Module.Auth;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

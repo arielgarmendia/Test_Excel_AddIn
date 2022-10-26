@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pricer.ExcelAddIn.Modules
+namespace Contracts.Module.CPrice.Autocall
 {
-    internal class Services
+    public class Autocall
     {
     }
 }

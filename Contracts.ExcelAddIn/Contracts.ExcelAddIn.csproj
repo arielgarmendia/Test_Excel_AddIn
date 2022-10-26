@@ -189,11 +189,6 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Authentication.cs" />
-    <Compile Include="Modules\Autocall.cs" />
-    <Compile Include="Modules\ExcelPricer.cs" />
-    <Compile Include="Modules\JsonConverter.cs" />
-    <Compile Include="Modules\Services.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -250,7 +245,30 @@
     <None Include="Resources\Logo.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
+    <ProjectReference Include="..\Contracts.Data.Model\Contracts.Data.Model.csproj">
+      <Project>{37e1f5e6-2ccb-4047-ace7-32387d7efc35}</Project>
+      <Name>Contracts.Data.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts.Module.Auth\Contracts.Module.Auth.csproj">
+      <Project>{35075076-3999-4200-ab46-610ba91a9b21}</Project>
+      <Name>Contracts.Module.Auth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts.Module.Converter\Contracts.Module.Converter.csproj">
+      <Project>{8d5c6e57-8f23-40b3-bc55-8730aac64e0b}</Project>
+      <Name>Contracts.Module.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts.Module.CPrice.Autocall\Contracts.Module.CPrice.Autocall.csproj">
+      <Project>{7a18a1e8-358d-43a3-beeb-e23e3e5b080e}</Project>
+      <Name>Contracts.Module.CPrice.Autocall</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts.Module.ExcelPricer\Contracts.Module.ExcelPricer.csproj">
+      <Project>{c15ad799-7f00-42cf-88bf-2777c65c256d}</Project>
+      <Name>Contracts.Module.ExcelPricer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts.Module.Services\Contracts.Module.Services.csproj">
+      <Project>{15183b3b-32fb-4824-9fd2-f936d61e1110}</Project>
+      <Name>Contracts.Module.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

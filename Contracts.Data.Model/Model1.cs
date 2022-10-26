@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pricer.ExcelAddIn.Modules
+namespace Contracts.Data.Model
 {
-    internal class JsonConverter
+    public class Model1
     {
     }
 }
